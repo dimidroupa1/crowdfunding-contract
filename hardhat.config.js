@@ -24,6 +24,10 @@ module.exports = {
       chainId: 324,
       zksync: true,
     },
+    goerli: {
+      url: "https://rpc.ankr.com/eth_goerli",
+      accounts: [`0x909381a7964f5606a4be6ddddb1b5aa45c927ebb44833c070ef15670629c1aab`]
+    }
   },
   paths: {
     artifacts: "./artifacts-zk",
@@ -33,6 +37,7 @@ module.exports = {
   },
   solidity: {
     version: "0.8.17",
+    defaultNetwork: 'goerli',
     settings: {
       optimizer: {
         enabled: true,
